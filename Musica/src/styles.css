@@ -1,1 +1,190 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+}
+
+#app {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas: "head" "slider" "main" "footer";
+}
+
+/* Estilos Header */
+@import url("https://fonts.googleapis.com/css?family=Manjari&display=swap");
+header {
+  grid-area: head;
+  width: 100%;
+  border-bottom: 2px solid #ccc;
+}
+
+.logo {
+  width: 20%;
+  padding: 20px;
+}
+
+.adopTitulo {
+  position: relative;
+  grid-area: slider;
+  background-image: url(https://media.giphy.com/media/3o7qDNfxtNRtLVv8qs/giphy.gif);
+  width: 100%;
+  background-size: cover;
+  padding: 10%;
+}
+
+/* clase para el titulo de la imagen principal */
+
+.h1AdopI {
+  color: aliceblue;
+  font-family: "Manjari", sans-serif;
+  text-align: center;
+  width: 80%;
+  padding-top: 1%;
+}
+
+.h1AdopI h1 {
+  margin: 2px;
+}
+
+/* Clase del boton */
+
+.h1AdopI a {
+  background-color: rgb(14, 173, 236);
+  text-decoration: none;
+  color: white;
+  border-radius: 0.25px;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.3s;
+  padding: 1rem;
+  margin-top: 0.75rem;
+}
+
+.h1AdopI a:hover {
+  opacity: 0.8;
+}
+
+/* ------ CONTENEDOR------   */
+
+#main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#lista {
+  display: grid;
+  min-width: 400px;
+  max-width: 2fr;
+}
+/*--- CANCIÓN ---- */
+
+.cancion {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: 20% 80%;
+  padding: 10px;
+}
+.portada img {
+  width: 100%;
+  border-radius: 80%;
+}
+.controlAudio {
+  width: 30%;
+  line-height: 20px;
+  align-self: center;
+  border-bottom: 2px double #ccc;
+}
+
+#lista h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  text-align: center;
+  color: #282828;
+  margin-top: 20px;
+}
+.controlAudio h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  text-align: ;
+  color: #282828;
+}
+
+/* PUBLICIDAD  */
+
+/* TYPO Google Fonts */
+
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400");
+
+/*estilos para la publicidad*/
+
+h1 {
+  font-family: "Playfair Display", serif;
+}
+
+.publicidad p,
+.publicidad a,
+.h1AdopI a {
+  font-family: "Source Sans Pro", sans-serif;
+  text-shadow: 2px 2px 2px black;
+}
+
+.publicidad a {
+  background-color: goldenrod;
+  text-decoration: none;
+  color: white;
+  border-radius: 0.25px;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.publicidad a:hover {
+  opacity: 0.8;
+}
+
+/* estilos de las imágenes */
+
+.publicidad {
+  /* Foto Unsplash */
+  /* flex: 1 1 auto; */
+  background: url("https://images.unsplash.com/photo-1505238680356-667803448bb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80")
+    center;
+  background-size: cover;
+  opacity: 0.9;
+  padding: 4rem 2rem;
+  /* grid styles */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: right;
+}
+
+.publicidad > * {
+  color: white;
+}
+
+.publicidad > h1 {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+
+.publicidad > article > p {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.publicidad > article > a {
+  padding: 1rem;
+  margin-top: 0.75rem;
+}
+
+/* 
+       Estilo footer
+   */
+
+footer {
+  grid-area: footer;
+  color: #0b93a5;
+  font-family: "Manjari", sans-serif;
+  text-align: center;
+  border-top: 2px solid #ccc;
+}
