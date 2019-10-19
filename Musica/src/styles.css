@@ -1,4 +1,3 @@
-/* You can add global styles to this file, and also import other style files */
 * {
   margin: 0;
 }
@@ -10,6 +9,7 @@
 }
 
 /* Estilos Header */
+
 @import url("https://fonts.googleapis.com/css?family=Manjari&display=swap");
 header {
   grid-area: head;
@@ -26,7 +26,6 @@ header {
   position: relative;
   grid-area: slider;
   background-image: url(https://media.giphy.com/media/3o7qDNfxtNRtLVv8qs/giphy.gif);
-  width: 100%;
   background-size: cover;
   padding: 10%;
 }
@@ -37,7 +36,6 @@ header {
   color: aliceblue;
   font-family: "Manjari", sans-serif;
   text-align: center;
-  width: 80%;
   padding-top: 1%;
 }
 
@@ -75,38 +73,52 @@ header {
   display: grid;
   min-width: 400px;
   max-width: 2fr;
+  margin-left: 20px;
 }
+
 /*--- CANCIÓN ---- */
 
 .cancion {
   display: grid;
   grid-gap: 40px;
   grid-template-columns: 20% 80%;
-  padding: 10px;
+  padding: 7px;
+  text-align: center;
 }
+
 .portada img {
   width: 100%;
   border-radius: 80%;
 }
+
 .controlAudio {
   width: 30%;
   line-height: 20px;
   align-self: center;
-  border-bottom: 2px double #ccc;
 }
 
-#lista h1 {
+.titulosec {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
   text-align: center;
   color: #282828;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
-.controlAudio h1 {
+
+.titulosec h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+  text-align: left;
+  color: #282828;
+}
+
+.controlAudio h2 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 20px;
-  text-align: ;
-  color: #282828;
+  text-align: left;
+  color: #626262;
+  margin: 7px;
 }
 
 /* PUBLICIDAD  */
@@ -135,7 +147,7 @@ h1 {
   border-radius: 0.25px;
   text-align: center;
   display: inline-block;
-  transition: all 0.3s;
+  /*transition: all 0.3s;*/
 }
 
 .publicidad a:hover {
@@ -178,8 +190,8 @@ h1 {
 }
 
 /* 
-       Estilo footer
-   */
+     Estilo footer
+ */
 
 footer {
   grid-area: footer;
@@ -187,4 +199,5 @@ footer {
   font-family: "Manjari", sans-serif;
   text-align: center;
   border-top: 2px solid #ccc;
+  padding: 10px;
 }
