@@ -41,8 +41,8 @@ function borrarCancion(req, res) {
   });
 }
 
-function obtenerTodasCanciones(params) {
-  var nombreCancion = req.params.nombre;
+function obtenerTodasCanciones(req, res) {
+  //var nombreCancion = req.params.nombre;
   Cancion.find((error, cancion) => {
     if (error) {
       res.status(500).send("Error en la petición");
